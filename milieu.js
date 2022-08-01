@@ -86,7 +86,7 @@ const playGame = async (number_of_players) => {
       return;
     }
     console.log(`--Player${current_player}'s Turn!--`);
-    rl.question("Skip Draw? (default is no) ", (input) => {
+    rl.question("Skip Draw? (default is no, y to skip) ", (input) => {
       if (input === "y") {
         // player skipped draw
         console.log(`Player${current_player} skipped draw!\n`);
